@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="home.css">
+    <!--IMPORT AXIOS-->
+        <script src="node_modules/axios/dist/axios.min.js"></script>
+    <!--CLOSE IMPORT AXIOS-->
+</head>
+<body>
+        <header>
+            <h1>Weather</h1>
+            <div style="display: flex; justify-content: flex-start;">
+                <input type="search" placeholder="Enter Your City, Country.." id="search">
+                <div onclick="" style="width: 50px; height: 50px; background-color: rgb(155, 153, 153); border-top-right-radius: 10px; border-bottom-right-radius: 10px; cursor: pointer;">
+                    <img src="images/search-icon.png" width="50px" height="50px" alt="" onclick="getweatherSearch()">
+                </div>
+            </div>
+        </header>
+        
+        <div class="contenair" id="contenaire">
+            <div class="top" style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px; ">
+                <div class="location">
+                    <h1>
+                        Beirut / Lebanon <br>
+                        <span class="lat-lon">30.872-35.510</span>
+                    </h1>
+                    <p class="p-location">2024-09-18 20:02</p>
+                </div>  
+                <div class="temperature">
+                    <div style="display: flex; justify-content: flex-start;">
+                        <h1>35 °C</h1>
+                        <img src="images/sunny.png" id="icon-temperature" style="width: 75px; height: 75px; margin-left: 20px;" alt="">
+                    </div> 
+                    <h1 id="h1-status">Sunny</h1>
+                </div>
+            </div>  
+            <div class="up">
+            <div class="bottom" style="display: flex; justify-content: space-around; align-items: center;">
+                <div style="display: flex; align-items: center;">
+                    <img src="images/wind.png" style="width: 100px; height: 100px;" alt="">
+                    <h2 style="text-align: center;">wind  7 km/h <br> SSW </h2>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/rain.png" style="width: 100px; height: 100px;" alt="">
+                    <h2>Rain : 0% </h2>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/Humidity.png" style="width: 50px; height: 50px;" alt="">
+                    <h2>Humidity : 65%</h2>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/CloudCover.png" style="width: 50px; height: 50px;" alt="">
+                    <h2>Cloud Cover  75% </h2> 
+                </div>
+                <div>
+                    <h2>Day </h2>
+                </div>
+            </div>    
+            </div>
+        </div>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>
